@@ -86,16 +86,97 @@ body {
       .die {
         position: relative;
         display: flex;
-        width: 70%;
+        width: 66%;
         aspect-ratio: 1/1;
         background-color: #fff;
         border-radius: 42px;
+      }
+
+      .dot {
+        display: block;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        background-color: $light-blue;
+      }
+      
+      .rombus {
+        display: block;
+        width: 42px;
+        height: 42px;
+        background-color: $light-purple;
+        transform: rotate(45deg);
+      }
+
+      #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding: 42px;
+      }
+      
+      .dice-left, .dice-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .dice-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      #dice-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #dice-2 {
+        position: absolute;
+        justify-content: space-between;
+        visibility: hidden;
+      }
+      
+      #dice-2 .dice-left {
+        align-self: flex-end;
+      }
+      
+      #dice-3 {
+        position: absolute;
+        justify-content: space-between;
+        visibility: hidden;
+      }
+      
+      #dice-3 .dice-right {
+        align-self: flex-end;
+      }
+      
+      #dice-4 {
+        position: absolute;
+        justify-content: space-between;
+        visibility: hidden;
+      }
+      
+      #dice-5 {
+        position: absolute;
+        justify-content: space-between;
+        visibility: hidden;
+      }
+      
+      #dice-6 {
+        position: absolute;
+        justify-content: space-between;
+        visibility: hidden;
       }
 
     }
   }
 
   footer {
+    margin-bottom: 21px;
+    
     p {
       color: $light-blue;
       font-size: 21px;

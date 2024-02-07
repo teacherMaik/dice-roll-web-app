@@ -93,10 +93,79 @@ body p, body .btn {
 .full-container .players .player-container .die {
   position: relative;
   display: flex;
-  width: 70%;
+  width: 66%;
   aspect-ratio: 1/1;
   background-color: #fff;
   border-radius: 42px;
+}
+.full-container .players .player-container .dot {
+  display: block;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  background-color: #78cdec;
+}
+.full-container .players .player-container .rombus {
+  display: block;
+  width: 42px;
+  height: 42px;
+  background-color: #ba86ed;
+  transform: rotate(45deg);
+}
+.full-container .players .player-container #dice-1, .full-container .players .player-container #dice-2, .full-container .players .player-container #dice-3, .full-container .players .player-container #dice-4, .full-container .players .player-container #dice-5, .full-container .players .player-container #dice-6 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 42px;
+}
+.full-container .players .player-container .dice-left, .full-container .players .player-container .dice-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.full-container .players .player-container .dice-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.full-container .players .player-container #dice-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-container .players .player-container #dice-2 {
+  position: absolute;
+  justify-content: space-between;
+  visibility: hidden;
+}
+.full-container .players .player-container #dice-2 .dice-left {
+  align-self: flex-end;
+}
+.full-container .players .player-container #dice-3 {
+  position: absolute;
+  justify-content: space-between;
+  visibility: hidden;
+}
+.full-container .players .player-container #dice-3 .dice-right {
+  align-self: flex-end;
+}
+.full-container .players .player-container #dice-4 {
+  position: absolute;
+  justify-content: space-between;
+  visibility: hidden;
+}
+.full-container .players .player-container #dice-5 {
+  position: absolute;
+  justify-content: space-between;
+  visibility: hidden;
+}
+.full-container .players .player-container #dice-6 {
+  position: absolute;
+  justify-content: space-between;
+  visibility: hidden;
+}
+.full-container footer {
+  margin-bottom: 21px;
 }
 .full-container footer p {
   color: #78cdec;
