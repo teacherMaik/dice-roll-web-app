@@ -1,0 +1,114 @@
+@import 'config';
+
+//Reset for all
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//General Styling
+body {
+  height: 100vh;
+  background-color: $dark-blue;
+
+  h1, h2 {
+    font-family: $primary-font;
+    color: $light-blue;
+    letter-spacing: 3px;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  p, .btn {
+    font-family: $secondary-font;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+}
+
+.full-container {
+  position: relative; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  #rollBtn {
+    width: 21%;
+  }
+
+  .players {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60%;
+
+    .celebrate {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        bottom: 28%;
+        position: absolute;
+        color: $yellow;
+        z-index: 2;
+        font-size: 4rem;
+        -webkit-text-stroke: 0.1px #fff;
+        visibility: hidden;
+      }
+
+      lord-icon {
+        display: block;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        visibility: hidden;
+      }
+    }
+
+    .player-container {
+      position: relative;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .die {
+        position: relative;
+        display: flex;
+        width: 70%;
+        aspect-ratio: 1/1;
+        background-color: #fff;
+        border-radius: 42px;
+      }
+
+    }
+  }
+
+  footer {
+    p {
+      color: $light-blue;
+      font-size: 21px;
+    }
+
+    span {
+      font-family: 'Lobster', cursive;
+      color: $light-purple;
+    }
+
+    a {
+      color: #fff;
+    }
+
+  }
+}

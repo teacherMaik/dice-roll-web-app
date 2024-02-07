@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+
+//Fonts
+$primary-font: 'Lobster', cursive;
+$secondary-font: 'Indie Flower', cursive;
+
+//Colors
+$light-blue: #78cdec;
+$light-purple: #ba86ed;
+$dark-blue: #342643;
+$yellow: #EDE187;
+
+//Buttons
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $light-purple;
+  font-weight: 700;
+  border-radius: 7px;
+  padding: 7px;
+  width: 42%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $yellow;
+    color: $dark-blue;
+  }
+}
