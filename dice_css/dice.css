@@ -257,33 +257,33 @@ body p, body h3, body .btn {
   .players {
     height: 70% !important;
   }
-  .players-left {
+  .players .players-left {
     flex-direction: column-reverse !important;
   }
-  .players-right {
+  .players .players-right {
     flex-direction: column !important;
   }
-  .players-left .celebrate, .players-right .celebrate {
+  .players .players-left .celebrate, .players .players-right .celebrate {
     width: 88% !important;
     height: 42% !important;
     align-self: center !important;
   }
-  .players-left .celebrate h2, .players-right .celebrate h2 {
+  .players .players-left .celebrate h2, .players .players-right .celebrate h2 {
     font-size: 5rem !important;
   }
-  .players-left .player-container, .players-right .player-container {
+  .players .players-left .player-container, .players .players-right .player-container {
     width: 88% !important;
     height: 79% !important;
     align-self: center !important;
   }
-  .players-left .player-container #dice-1, .players-left .player-container #dice-2, .players-left .player-container #dice-3, .players-left .player-container #dice-4, .players-left .player-container #dice-5, .players-left .player-container #dice-6, .players-right .player-container #dice-1, .players-right .player-container #dice-2, .players-right .player-container #dice-3, .players-right .player-container #dice-4, .players-right .player-container #dice-5, .players-right .player-container #dice-6 {
+  .players .players-left .player-container #dice-1, .players .players-left .player-container #dice-2, .players .players-left .player-container #dice-3, .players .players-left .player-container #dice-4, .players .players-left .player-container #dice-5, .players .players-left .player-container #dice-6, .players .players-right .player-container #dice-1, .players .players-right .player-container #dice-2, .players .players-right .player-container #dice-3, .players .players-right .player-container #dice-4, .players .players-right .player-container #dice-5, .players .players-right .player-container #dice-6 {
     padding: 1.7rem 1.7rem !important;
   }
-  .players-left .player-container #dice-1 .dot, .players-left .player-container #dice-1 .rombus, .players-left .player-container #dice-2 .dot, .players-left .player-container #dice-2 .rombus, .players-left .player-container #dice-3 .dot, .players-left .player-container #dice-3 .rombus, .players-left .player-container #dice-4 .dot, .players-left .player-container #dice-4 .rombus, .players-left .player-container #dice-5 .dot, .players-left .player-container #dice-5 .rombus, .players-left .player-container #dice-6 .dot, .players-left .player-container #dice-6 .rombus, .players-right .player-container #dice-1 .dot, .players-right .player-container #dice-1 .rombus, .players-right .player-container #dice-2 .dot, .players-right .player-container #dice-2 .rombus, .players-right .player-container #dice-3 .dot, .players-right .player-container #dice-3 .rombus, .players-right .player-container #dice-4 .dot, .players-right .player-container #dice-4 .rombus, .players-right .player-container #dice-5 .dot, .players-right .player-container #dice-5 .rombus, .players-right .player-container #dice-6 .dot, .players-right .player-container #dice-6 .rombus {
+  .players .players-left .player-container #dice-1 .dot, .players .players-left .player-container #dice-1 .rombus, .players .players-left .player-container #dice-2 .dot, .players .players-left .player-container #dice-2 .rombus, .players .players-left .player-container #dice-3 .dot, .players .players-left .player-container #dice-3 .rombus, .players .players-left .player-container #dice-4 .dot, .players .players-left .player-container #dice-4 .rombus, .players .players-left .player-container #dice-5 .dot, .players .players-left .player-container #dice-5 .rombus, .players .players-left .player-container #dice-6 .dot, .players .players-left .player-container #dice-6 .rombus, .players .players-right .player-container #dice-1 .dot, .players .players-right .player-container #dice-1 .rombus, .players .players-right .player-container #dice-2 .dot, .players .players-right .player-container #dice-2 .rombus, .players .players-right .player-container #dice-3 .dot, .players .players-right .player-container #dice-3 .rombus, .players .players-right .player-container #dice-4 .dot, .players .players-right .player-container #dice-4 .rombus, .players .players-right .player-container #dice-5 .dot, .players .players-right .player-container #dice-5 .rombus, .players .players-right .player-container #dice-6 .dot, .players .players-right .player-container #dice-6 .rombus {
     width: 50px !important;
     height: 50px !important;
   }
-  .players-left .player-container .die-flex, .players-left .player-container .die-grid, .players-right .player-container .die-flex, .players-right .player-container .die-grid {
+  .players .players-left .player-container .die-flex, .players .players-left .player-container .die-grid, .players .players-right .player-container .die-flex, .players .players-right .player-container .die-grid {
     width: 88% !important;
   }
 }
