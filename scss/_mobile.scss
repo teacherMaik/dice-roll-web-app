@@ -1,3 +1,7 @@
+
+
+// Flex pips not very responsive at all
+// Change Flex pips size
 @media(max-width: 1200px) {
 
   .die-flex {
@@ -10,6 +14,7 @@
 
 }
 
+// Change Flex-pips size again
 @media(max-width: 1100px) {
   .die-flex {
 
@@ -26,45 +31,48 @@
     font-size: 5rem !important;
   }
 
+  // Heightens the players container as celebration div will be below the dice
   .players {
     height: 70% !important;
-  }
-  .players-left {
-    flex-direction: column-reverse !important;
-  }
 
-  .players-right {
-    flex-direction: column !important;
-  }
-
-  .players-left, .players-right {
-    
-    .celebrate {
-      width: 88% !important;
-      height: 42% !important;
-      align-self: center !important;
-
-      h2 {
-        font-size: 5rem !important;
-      }
+    // Change flex to column
+    .players-left {
+      flex-direction: column-reverse !important;
     }
-
-    .player-container {
-      width: 88% !important;
-      height: 79% !important;
-      align-self: center !important;
-
-      #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
-        padding: 1.7rem 1.7rem !important;
-
-        .dot, .rombus {
-          width: 50px !important;
-          height: 50px !important;
+  
+    .players-right {
+      flex-direction: column !important;
+    }
+  
+    .players-left, .players-right {
+      
+      .celebrate {
+        width: 88% !important;
+        height: 42% !important;
+        align-self: center !important;
+  
+        h2 {
+          font-size: 5rem !important;
         }
       }
-    
-      .die-flex, .die-grid {
+  
+      .player-container {
         width: 88% !important;
+        height: 79% !important;
+        align-self: center !important;
+  
+        #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
+          padding: 1.7rem 1.7rem !important;
+  
+          .dot, .rombus {
+            width: 50px !important;
+            height: 50px !important;
+          }
+        }
+      
+        .die-flex, .die-grid {
+          width: 88% !important;
+        }
       }
     }
   }

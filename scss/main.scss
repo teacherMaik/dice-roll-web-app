@@ -29,6 +29,7 @@ body {
   }
 }
 
+// Everything, even Footer is in Full-container
 .full-container {
   position: relative; 
   height: 100%;
@@ -37,10 +38,12 @@ body {
   justify-content: space-between;
   align-items: center;
 
+  // Main button to roll dice
   #rollBtn {
     width: 21%;
   }
 
+  // Grid container with 2 grid areas, each a flex-container
   .players {
     position: relative;
     width: 90%;
@@ -48,6 +51,7 @@ body {
     grid-template-columns: 1fr 1fr;
     height: 60%;
 
+    // Left and Right sides will hold 2 main divs
     &-left {
       width: 100%;
       display: flex;
@@ -62,10 +66,12 @@ body {
 
     }
 
+    // Button to change stying
     .btn {
       width: 80%;
     }
 
+    // Div which holds icon and winner/draw text
     .celebrate {
       position: relative;
       width: 42%;
@@ -84,6 +90,7 @@ body {
         -webkit-text-stroke: 0.1px #fff;
       }
 
+      // Must have link in head of HTML
       lord-icon {
         display: block;
         height: 100%;
@@ -91,11 +98,13 @@ body {
         z-index: 1;
       }
 
+      // Scripts work with id of the lordicon icons, visibility hidden when page loads
       #flag-1, #flag-2 {
         visibility: hidden;
       }
     }
 
+    // Class for the player divs with stats, button to change style and dice
     .player-container {
       width: 42%;
       position: relative;
@@ -111,6 +120,7 @@ body {
         }
       }
 
+      // Player 1 dice is done with Flex
       .die-flex {
         position: relative;
         display: flex;
@@ -135,6 +145,7 @@ body {
           transform: rotate(45deg);
         }
 
+        // Six divs, one for each dice
         #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
           width: 100%;
           position: relative;
@@ -142,6 +153,7 @@ body {
           padding: 1.3rem 1.3rem;
         }
         
+        // Areas of Flex-dice: Left-Center-Right
         .dice-left, .dice-right {
           display: flex;
           flex-direction: column;
@@ -154,30 +166,32 @@ body {
           justify-content: center;
         }
         
+        // Dice-1 starts not hidden and seen when page loads
         #dice-1 {
           display: flex;
           justify-content: center;
           align-items: center;
         }
         
+
         #dice-2 {
           position: absolute;
           justify-content: space-between;
           visibility: hidden;
-        }
-        
-        #dice-2 .dice-left {
-          align-self: flex-end;
+
+          .dice-left {
+            align-self: flex-end;
+          }
         }
         
         #dice-3 {
           position: absolute;
           justify-content: space-between;
           visibility: hidden;
-        }
-        
-        #dice-3 .dice-right {
-          align-self: flex-end;
+
+          .dice-right {
+            align-self: flex-end;
+          }
         }
         
         #dice-4 {
@@ -199,6 +213,7 @@ body {
         }
       }
 
+      // Player 2 dice is done with Grid
       .die-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
@@ -209,6 +224,7 @@ body {
         border-radius: 21px;
         padding: 0.7rem ;
 
+        // Only one div and hide/show pips with script. All pips start hidden except the 5th, to show a 1 when page loads
         > div {
           visibility: hidden;
         }
@@ -217,6 +233,7 @@ body {
           visibility: visible;
         }
 
+        // Div that holds pips to be able to center and add % widths for responsiveness
         .pip {
           display: flex;
           justify-content: center;
@@ -268,4 +285,5 @@ body {
   }
 }
 
+// Import Mobile Sheet at bottom so everything cascades as intended
 @import 'mobile';
