@@ -16,160 +16,155 @@
     </header>
     <div id="rollBtn" class="btn">Let's roll'em</div>
     <div class="players">
-      <div class="celebrate">
-        <h2 class="winner winner-1">Player 1!</h2>
-        <h2 class="draw">Draw!</h2>
-        <lord-icon src="https://cdn.lordicon.com/twsqddew.json" trigger="loop" id="flag-1"><lord-icon>
-      </div>
-      <div class="player-container" id="player-1">
-        <h2>Player 1</h2>
-        <div id="btn-pips-1" class="btn">Change style</div>
-        <div class="die">
-          <div id="dice-1" class="dice">
-            <div id="pip" class="dot"></div>
+      <div class="players-left">
+        <div class="celebrate">
+          <h2 id="player-1-result"></h2>
+          <lord-icon src="https://cdn.lordicon.com/twsqddew.json" trigger="loop" id="flag-1"><lord-icon>
+        </div>
+        <div class="player-container" id="player-1">
+          <div class="player-info">
+            <h2>Player 1</h2>
+            <h3 class="wins">Wins: 0</h3>
+            <h3 class="draws">Draws: 0</h3>
+            <h3 class="losses">Losses: 0</h3>
           </div>
-          <div id="dice-2" class="dice">
-            <div class="dice-left">
+          <div id="btn-pips-1" class="btn">Change style</div>
+          <div class="die-flex">
+            <div id="dice-1" class="dice">
               <div id="pip" class="dot"></div>
             </div>
+            <div id="dice-2" class="dice">
+              <div class="dice-left">
+                <div id="pip" class="dot"></div>
+              </div>
+                <div class="dice-right">
+                  <div id="pip" class="dot"></div>
+                </div>
+            </div>
+            <div id="dice-3" class="dice">
+              <div class="dice-left">
+                <div id="pip" class="dot"></div>
+              </div>
+              <div class="dice-center">
+                <div id="pip" class="dot"></div>
+              </div>
               <div class="dice-right">
                 <div id="pip" class="dot"></div>
               </div>
-          </div>
-          <div id="dice-3" class="dice">
-            <div class="dice-left">
-              <div id="pip" class="dot"></div>
             </div>
-            <div class="dice-center">
-              <div id="pip" class="dot"></div>
+            <div id="dice-4" class="dice">
+              <div class="dice-left">
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+              </div>
+              <div class="dice-right">
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+              </div>
             </div>
-            <div class="dice-right">
-              <div id="pip" class="dot"></div>
+            <div id="dice-5" class="dice">
+              <div class="dice-left">
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+              </div>
+              <div class="dice-center">
+                <div id="pip" class="dot"></div>
+              </div>
+              <div class="dice-right">
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+              </div>
             </div>
-          </div>
-          <div id="dice-4" class="dice">
-            <div class="dice-left">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-            <div class="dice-right">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-          </div>
-          <div id="dice-5" class="dice">
-            <div class="dice-left">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-            <div class="dice-center">
-              <div id="pip" class="dot"></div>
-            </div>
-            <div class="dice-right">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-          </div>
-          <div id="dice-6" class="dice">
-            <div class="dice-left">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-            <div class="dice-right">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
+            <div id="dice-6" class="dice">
+              <div class="dice-left">
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+              </div>
+              <div class="dice-right">
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+                <div id="pip" class="dot"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="player-2" class="player-container">
-        <h2>Player 2</h2>
-        <div id="btn-pips-2" class="btn">Change style</div>
-        <div class="die">
-          <div id="dice-1" class="dice">
-            <div id="pip" class="dot"></div>
+      <div class="players-right">
+        <div id="player-2" class="player-container">
+          <div class="player-info">
+            <h2>Player 2</h2>
+            <h3 class="wins">Wins: 0</h3>
+            <h3 class="draws">Draws: 0</h3>
+            <h3 class="losses">Losses: 0</h3>
           </div>
-          <div id="dice-2" class="dice">
-            <div class="dice-left">
+          <div id="btn-pips-2" class="btn">Change style</div>
+          <div class="die-grid">
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-            <div class="dice-right">
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-          </div>
-          <div id="dice-3" class="dice">
-            <div class="dice-left">
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-            <div class="dice-center">
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-            <div class="dice-right">
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-          </div>
-          <div id="dice-4" class="dice">
-            <div class="dice-left">
-              <div id="pip" class="dot"></div>
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-            <div class="dice-right">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-          </div>
-          <div id="dice-5" class="dice">
-            <div class="dice-left">
-              <div id="pip" class="dot"></div>
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-            <div class="dice-center">
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
-            <div class="dice-right">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-          </div>
-          <div id="dice-6" class="dice">
-            <div class="dice-left">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
-            </div>
-            <div class="dice-right">
-              <div id="pip" class="dot"></div>
-              <div id="pip" class="dot"></div>
+            <div class="pip">
               <div id="pip" class="dot"></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="celebrate">
-        <h2 class="winner winner-2">Player 2!</h2>
-        <h2 class="draw">Draw!</h2>
-        <lord-icon src="https://cdn.lordicon.com/twsqddew.json" trigger="loop" id="flag-2">
-        </lord-icon>
+        <div class="celebrate">
+          <h2 id="player-2-result"></h2>
+          <lord-icon src="https://cdn.lordicon.com/twsqddew.json" trigger="loop" id="flag-2">
+          </lord-icon>
+        </div>
       </div>
     </div>
     <footer>
-      <p>Dice created with Flexbox. Celebration icons from <a href="https://lordicon.com/" target="_blank">Lordicon</a>. <span>Lobster</span> and Indie Flower cursive fonts from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
+      <div class="dice-info">
+        <p>Player 1 Dice created with Flex-box. Player 2 dice created with Grid.</p>
+      </div>
+      <div class="icons-info">
+        <p>Celebration icons from <a href="https://lordicon.com/" target="_blank">Lordicon</a>.</p>
+      </div>
+      <div class="font-info">
+        <p><span>Lobster</span> and Indie Flower cursive fonts from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
+      </div>
     </footer>
   </div>
 
   <script type="text/javascript" src="js/index.js" charset="utf-8"></script>
+
   <script>
 
+    let player1Record = [0, 0, 0];
+    let player2Record = [0, 0, 0];
 
     document.getElementById("rollBtn").addEventListener("click", rollEm);
 
     function rollEm() {
 
+      // Generaates random number for each player
       let numPlayer1 = Math.floor(Math.random() * 6) + 1;
       let numPlayer2 = Math.floor(Math.random() * 6) + 1;
 
+      // Resets flex-box dice when rolled
       let allDice = document.querySelectorAll(".dice");
       for (var i = 0; i < allDice.length; i++) {
 
@@ -177,19 +172,85 @@
         allDice[i].style.position = "absolute";
       }
 
-      document.getElementById("flag-1").style.visibility = "hidden";
+      // Get player 2 dice pips in array and resets when rolled
+      let pips = document.querySelectorAll(".die-grid #pip");
 
-      document.getElementById("flag-2").style.visibility = "hidden";
+      for (var pip = 0; pip < pips.length; pip++) {
 
-      let winners = document.querySelectorAll("h2.winner");
-      let draws = document.querySelectorAll("h2.draw");
-
-      for (var x = 0; x < winners.length; x++) {
-
-        winners[x].style.visibility = "hidden";
-        draws[x].style.visibility = "hidden";
+        pips[pip].style.visibility = "hidden";
       }
 
+      // Resets icon and winner text for both players
+      document.getElementById("flag-1").style.visibility = "hidden";
+      document.getElementById("flag-2").style.visibility = "hidden";
+      document.getElementById("player-1-result").innerText = "";
+      document.getElementById("player-2-result").innerText = "";
+
+      // Conditionals to Show winner results on sides
+      if (numPlayer1 == numPlayer2) {
+
+        // Player 1 results, stats and celebration for a Draw
+        document.getElementById("flag-1").style.visibility = "visible";
+        document.getElementById("player-1-result").innerText = "Draw!";
+        document.querySelector("#player-1 .draws").innerText = "Draws: " + ++player1Record[1] + ", " + 
+          ((player1Record[1] / (player1Record[0] + player1Record[1] + player1Record [2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-1 .wins").innerText = "Wins: " + player1Record[0] + ", " + 
+          ((player1Record[0] / (player1Record[0] + player1Record[1] + player1Record [2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-1 .losses").innerText = "Losses: " + player1Record[2] + ", " + 
+          ((player1Record[2] / (player1Record[0] + player1Record[1] + player1Record [2])) * 100).toFixed(2) + "%";
+
+        // Player 2 results, stats and celebration for a Draw
+        document.getElementById("flag-2").style.visibility = "visible";
+        document.getElementById("player-2-result").innerText = "Draw!";
+        document.querySelector("#player-2 .draws").innerText = "Draws: " + ++player2Record[1] + ", " + 
+          ((player2Record[1] / (player2Record[0] + player2Record[1] + player2Record [2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-2 .wins").innerText = "Wins: " + player2Record[0] + ", " + 
+          ((player2Record[0] / (player2Record[0] + player2Record[1] + player2Record [2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-2 .losses").innerText = "Losses: " + player2Record[2] + ", " + 
+          ((player2Record[2] / (player2Record[0] + player2Record[1] + player2Record [2])) * 100).toFixed(2) + "%";
+
+        } else if (numPlayer1 > numPlayer2) {
+
+        // Player 1 results, stats and celebration for a Player 1 win
+        document.getElementById("flag-1").style.visibility = "visible";
+        document.getElementById("player-1-result").innerText = "Player 1!"
+        document.querySelector("#player-1 .wins").innerText = "Wins: " + ++player1Record[0] + ", " + 
+          ((player1Record[0] / (player1Record[0] + player1Record[1] + player1Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-1 .draws").innerText = "Draws: " + player1Record[1] + ", " + 
+          ((player1Record[1] / (player1Record[0] + player1Record[1] + player1Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-1 .losses").innerText = "Losses: " + player1Record[2] + ", " + 
+          ((player1Record[2] / (player1Record[0] + player1Record[1] + player1Record[2])) * 100).toFixed(2) + "%";
+
+        // Player 2 results and Stats for a Player 1 win
+        document.querySelector("#player-2 .losses").innerText = "Losses: " + ++player2Record[2] + ", " + 
+          ((player2Record[2] / (player2Record[0] + player2Record[1] + player2Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-2 .wins").innerText = "Wins: " + player2Record[0] + ", " + 
+          ((player2Record[0] / (player2Record[0] + player2Record[1] + player2Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-2 .draws").innerText = "Draws: " + player2Record[1] + ", " + 
+          ((player2Record[1] / (player2Record[0] + player2Record[1] + player2Record[2])) * 100).toFixed(2) + "%";
+
+        } else if (numPlayer1 < numPlayer2) {
+
+        // Player 2 results, stats and celebration for a Player 2 win
+        document.getElementById("flag-2").style.visibility = "visible";
+        document.getElementById("player-2-result").innerText = "Player 2!"
+        document.querySelector("#player-2 .wins").innerText = "Wins: " + ++player2Record[0] + ", " + 
+          ((player2Record[0] / (player2Record[0] + player2Record[1] + player2Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-2 .draws").innerText = "Draws: " + player2Record[1] + ", " + 
+          ((player2Record[1] / (player2Record[0] + player2Record[1] + player2Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-2 .losses").innerText = "Losses: " + player2Record[2] + ", " + 
+          ((player2Record[2] / (player2Record[0] + player2Record[1] + player2Record[2])) * 100).toFixed(2) + "%";
+
+        // Player 1 results and stats for a Player 2 win
+        document.querySelector("#player-1 .losses").innerText = "Losses: " + ++player1Record[2] + ", " + 
+          ((player1Record[2] / (player1Record[0] + player1Record[1] + player1Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-1 .wins").innerText = "Wins: " + player1Record[0] + ", " + 
+          ((player1Record[0] / (player1Record[0] + player1Record[1] + player1Record[2])) * 100).toFixed(2) + "%";
+        document.querySelector("#player-1 .draws").innerText = "Draws: " + player1Record[1] + ", " + 
+          ((player1Record[1] / (player1Record[0] + player1Record[1] + player1Record[2])) * 100).toFixed(2) + "%";
+      }
+
+      // Conditionals to Show player 1 dice
       if (numPlayer1 == 1) {
 
         let diceStyle = document.querySelector("#player-1 #dice-1").style;
@@ -228,65 +289,43 @@
         diceStyle.visibility = "visible";
       }
 
+      // Conditionals to show die pips according to number rolled
       if (numPlayer2 == 1) {
 
-        let diceStyle = document.querySelector("#player-2 #dice-1").style;
+        pips[4].style.visibility = "visible";
+      } else if (numPlayer2 == 2) {
 
-        diceStyle.position = "relative";
-        diceStyle.visibility = "visible";
-        } else if (numPlayer2 == 2) {
+        pips[2].style.visibility = "visible";
+        pips[6].style.visibility = "visible";
+      } else if (numPlayer2 == 3) {
 
-        let diceStyle = document.querySelector("#player-2 #dice-2").style;
+        pips[0].style.visibility = "visible";
+        pips[4].style.visibility = "visible";
+        pips[8].style.visibility = "visible";
+      } else if (numPlayer2 == 4) {
 
-        diceStyle.position = "relative";
-        diceStyle.visibility = "visible";
-        } else if (numPlayer2 == 3) {
+        pips[0].style.visibility = "visible";
+        pips[2].style.visibility = "visible";
+        pips[6].style.visibility = "visible";
+        pips[8].style.visibility = "visible";
+      } else if (numPlayer2 == 5) {
 
-        let diceStyle = document.querySelector("#player-2 #dice-3").style;
+        pips[0].style.visibility = "visible";
+        pips[2].style.visibility = "visible";
+        pips[4].style.visibility = "visible";
+        pips[6].style.visibility = "visible";
+        pips[8].style.visibility = "visible";
+      } else if (numPlayer2 == 6) {
 
-        diceStyle.position = "relative";
-        diceStyle.visibility = "visible";
-        } else if (numPlayer2 == 4) {
-
-        let diceStyle = document.querySelector("#player-2 #dice-4").style;
-
-        diceStyle.position = "relative";
-        diceStyle.visibility = "visible";
-        } else if (numPlayer2 == 5) {
-
-        let diceStyle = document.querySelector("#player-2 #dice-5").style;
-
-        diceStyle.position = "relative";
-        diceStyle.visibility = "visible";
-        } else if (numPlayer2 == 6) {
-
-        let diceStyle = document.querySelector("#player-2 #dice-6").style;
-
-        diceStyle.position = "relative";
-        diceStyle.visibility = "visible";
-      }
-
-      if (numPlayer1 == numPlayer2) {
-
-        document.getElementById("flag-1").style.visibility = "visible";
-        document.getElementById("flag-2").style.visibility = "visible";
-        let draws = document.querySelectorAll('.draw');
-
-        for (var draw = 0; draw < draws.length; draw++) {
-          draws[draw].style.visibility = "visible";
-        }
-      } else if (numPlayer1 > numPlayer2) {
-
-        document.getElementById("flag-1").style.visibility = "visible";
-
-        document.querySelector("h2.winner-1").style.visibility = "visible";
-      } else if (numPlayer1 < numPlayer2) {
-        document.getElementById("flag-2").style.visibility = "visible";
-
-        document.querySelector("h2.winner-2").style.visibility = "visible";
+        pips[0].style.visibility = "visible";
+        pips[2].style.visibility = "visible";
+        pips[3].style.visibility = "visible";
+        pips[5].style.visibility = "visible";
+        pips[6].style.visibility = "visible";
+        pips[8].style.visibility = "visible";
       }
     }
-
   </script>
+
 </body>
 </html>

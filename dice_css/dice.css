@@ -34,7 +34,7 @@ body h1, body h2 {
 body h1 {
   font-size: 7rem;
 }
-body p, body .btn {
+body p, body h3, body .btn {
   font-family: "Indie Flower", cursive;
   color: #fff;
   letter-spacing: 2px;
@@ -54,12 +54,27 @@ body p, body .btn {
 .full-container .players {
   position: relative;
   width: 90%;
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 60%;
 }
+.full-container .players-left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.full-container .players-right {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.full-container .players .btn {
+  width: 80%;
+}
 .full-container .players .celebrate {
-  width: 20%;
+  position: relative;
+  width: 42%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -73,102 +88,146 @@ body p, body .btn {
   z-index: 2;
   font-size: 4rem;
   -webkit-text-stroke: 0.1px #fff;
-  visibility: hidden;
 }
 .full-container .players .celebrate lord-icon {
   display: block;
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+.full-container .players .celebrate #flag-1, .full-container .players .celebrate #flag-2 {
   visibility: hidden;
 }
 .full-container .players .player-container {
+  width: 42%;
   position: relative;
-  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.full-container .players .player-container .die {
+.full-container .players .player-container .player-info h2 {
+  margin-bottom: 0.7rem;
+}
+.full-container .players .player-container .die-flex {
   position: relative;
   display: flex;
-  width: 66%;
+  width: 77%;
   aspect-ratio: 1/1;
   background-color: #fff;
-  border-radius: 42px;
+  border-radius: 21px;
 }
-.full-container .players .player-container .dot {
+.full-container .players .player-container .die-flex .dot {
   display: block;
   border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background-color: #78cdec;
 }
-.full-container .players .player-container .rombus {
+.full-container .players .player-container .die-flex .rombus {
   display: block;
   width: 42px;
   height: 42px;
   background-color: #ba86ed;
   transform: rotate(45deg);
 }
-.full-container .players .player-container #dice-1, .full-container .players .player-container #dice-2, .full-container .players .player-container #dice-3, .full-container .players .player-container #dice-4, .full-container .players .player-container #dice-5, .full-container .players .player-container #dice-6 {
+.full-container .players .player-container .die-flex #dice-1, .full-container .players .player-container .die-flex #dice-2, .full-container .players .player-container .die-flex #dice-3, .full-container .players .player-container .die-flex #dice-4, .full-container .players .player-container .die-flex #dice-5, .full-container .players .player-container .die-flex #dice-6 {
   width: 100%;
   position: relative;
   display: flex;
-  padding: 42px;
+  padding: 1.3rem 1.3rem;
 }
-.full-container .players .player-container .dice-left, .full-container .players .player-container .dice-right {
+.full-container .players .player-container .die-flex .dice-left, .full-container .players .player-container .die-flex .dice-right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.full-container .players .player-container .dice-center {
+.full-container .players .player-container .die-flex .dice-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.full-container .players .player-container #dice-1 {
+.full-container .players .player-container .die-flex #dice-1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.full-container .players .player-container #dice-2 {
+.full-container .players .player-container .die-flex #dice-2 {
   position: absolute;
   justify-content: space-between;
   visibility: hidden;
 }
-.full-container .players .player-container #dice-2 .dice-left {
+.full-container .players .player-container .die-flex #dice-2 .dice-left {
   align-self: flex-end;
 }
-.full-container .players .player-container #dice-3 {
+.full-container .players .player-container .die-flex #dice-3 {
   position: absolute;
   justify-content: space-between;
   visibility: hidden;
 }
-.full-container .players .player-container #dice-3 .dice-right {
+.full-container .players .player-container .die-flex #dice-3 .dice-right {
   align-self: flex-end;
 }
-.full-container .players .player-container #dice-4 {
+.full-container .players .player-container .die-flex #dice-4 {
   position: absolute;
   justify-content: space-between;
   visibility: hidden;
 }
-.full-container .players .player-container #dice-5 {
+.full-container .players .player-container .die-flex #dice-5 {
   position: absolute;
   justify-content: space-between;
   visibility: hidden;
 }
-.full-container .players .player-container #dice-6 {
+.full-container .players .player-container .die-flex #dice-6 {
   position: absolute;
   justify-content: space-between;
   visibility: hidden;
+}
+.full-container .players .player-container .die-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-gap: 2%;
+  width: 77%;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: 21px;
+  padding: 0.7rem;
+}
+.full-container .players .player-container .die-grid > div {
+  visibility: hidden;
+}
+.full-container .players .player-container .die-grid > :nth-child(5) {
+  visibility: visible;
+}
+.full-container .players .player-container .die-grid .pip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-container .players .player-container .die-grid .pip .dot {
+  display: flex;
+  width: 63%;
+  height: 63%;
+  background-color: #78cdec;
+  border-radius: 50%;
+}
+.full-container .players .player-container .die-grid .pip .rombus {
+  display: flex;
+  width: 63%;
+  height: 63%;
+  background-color: #ba86ed;
+  transform: rotate(45deg);
 }
 .full-container footer {
-  margin-bottom: 21px;
+  display: flex;
+  padding: 0 2rem;
+  background-color: #78cdec;
+}
+.full-container footer .dice-info, .full-container footer .icons-info, .full-container footer .font-info {
+  padding: 1rem;
 }
 .full-container footer p {
-  color: #78cdec;
+  color: #342643;
   font-size: 21px;
 }
 .full-container footer span {
@@ -177,6 +236,145 @@ body p, body .btn {
 }
 .full-container footer a {
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .die-flex .dot, .die-flex .rombus {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+@media (max-width: 1100px) {
+  .die-flex .dot, .die-flex .rombus {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+@media (max-width: 920px) {
+  h1 {
+    font-size: 5rem !important;
+  }
+  .players {
+    height: 70% !important;
+  }
+  .players-left {
+    flex-direction: column-reverse !important;
+  }
+  .players-right {
+    flex-direction: column !important;
+  }
+  .players-left .celebrate, .players-right .celebrate {
+    width: 88% !important;
+    height: 42% !important;
+    align-self: center !important;
+  }
+  .players-left .celebrate h2, .players-right .celebrate h2 {
+    font-size: 5rem !important;
+  }
+  .players-left .player-container, .players-right .player-container {
+    width: 88% !important;
+    height: 79% !important;
+    align-self: center !important;
+  }
+  .players-left .player-container #dice-1, .players-left .player-container #dice-2, .players-left .player-container #dice-3, .players-left .player-container #dice-4, .players-left .player-container #dice-5, .players-left .player-container #dice-6, .players-right .player-container #dice-1, .players-right .player-container #dice-2, .players-right .player-container #dice-3, .players-right .player-container #dice-4, .players-right .player-container #dice-5, .players-right .player-container #dice-6 {
+    padding: 1.7rem 1.7rem !important;
+  }
+  .players-left .player-container #dice-1 .dot, .players-left .player-container #dice-1 .rombus, .players-left .player-container #dice-2 .dot, .players-left .player-container #dice-2 .rombus, .players-left .player-container #dice-3 .dot, .players-left .player-container #dice-3 .rombus, .players-left .player-container #dice-4 .dot, .players-left .player-container #dice-4 .rombus, .players-left .player-container #dice-5 .dot, .players-left .player-container #dice-5 .rombus, .players-left .player-container #dice-6 .dot, .players-left .player-container #dice-6 .rombus, .players-right .player-container #dice-1 .dot, .players-right .player-container #dice-1 .rombus, .players-right .player-container #dice-2 .dot, .players-right .player-container #dice-2 .rombus, .players-right .player-container #dice-3 .dot, .players-right .player-container #dice-3 .rombus, .players-right .player-container #dice-4 .dot, .players-right .player-container #dice-4 .rombus, .players-right .player-container #dice-5 .dot, .players-right .player-container #dice-5 .rombus, .players-right .player-container #dice-6 .dot, .players-right .player-container #dice-6 .rombus {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .players-left .player-container .die-flex, .players-left .player-container .die-grid, .players-right .player-container .die-flex, .players-right .player-container .die-grid {
+    width: 88% !important;
+  }
+}
+@media (max-width: 735px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+  .celebrate h2 {
+    font-size: 2rem !important;
+  }
+  .players-left .player-container .die-flex #dice-1, .players-left .player-container .die-flex #dice-2, .players-left .player-container .die-flex #dice-3, .players-left .player-container .die-flex #dice-4, .players-left .player-container .die-flex #dice-5, .players-left .player-container .die-flex #dice-6, .players-right .player-container .die-flex #dice-1, .players-right .player-container .die-flex #dice-2, .players-right .player-container .die-flex #dice-3, .players-right .player-container .die-flex #dice-4, .players-right .player-container .die-flex #dice-5, .players-right .player-container .die-flex #dice-6 {
+    padding: 1.7rem 1.7rem !important;
+  }
+  .players-left .player-container .die-flex #dice-1 .dot, .players-left .player-container .die-flex #dice-1 .rombus, .players-left .player-container .die-flex #dice-2 .dot, .players-left .player-container .die-flex #dice-2 .rombus, .players-left .player-container .die-flex #dice-3 .dot, .players-left .player-container .die-flex #dice-3 .rombus, .players-left .player-container .die-flex #dice-4 .dot, .players-left .player-container .die-flex #dice-4 .rombus, .players-left .player-container .die-flex #dice-5 .dot, .players-left .player-container .die-flex #dice-5 .rombus, .players-left .player-container .die-flex #dice-6 .dot, .players-left .player-container .die-flex #dice-6 .rombus, .players-right .player-container .die-flex #dice-1 .dot, .players-right .player-container .die-flex #dice-1 .rombus, .players-right .player-container .die-flex #dice-2 .dot, .players-right .player-container .die-flex #dice-2 .rombus, .players-right .player-container .die-flex #dice-3 .dot, .players-right .player-container .die-flex #dice-3 .rombus, .players-right .player-container .die-flex #dice-4 .dot, .players-right .player-container .die-flex #dice-4 .rombus, .players-right .player-container .die-flex #dice-5 .dot, .players-right .player-container .die-flex #dice-5 .rombus, .players-right .player-container .die-flex #dice-6 .dot, .players-right .player-container .die-flex #dice-6 .rombus {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  footer {
+    padding: 0 1rem !important;
+  }
+  footer .dice-info, footer .icons-info, footer .font-info {
+    padding: 0.3rem !important;
+  }
+  footer p {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 678px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  #rollBtn {
+    width: 70% !important;
+  }
+  .players {
+    height: 70% !important;
+  }
+  .players-left .celebrate h2, .players-right .celebrate h2 {
+    font-size: 3rem !important;
+  }
+  .players-left .player-container, .players-right .player-container {
+    width: 100% !important;
+  }
+  .players-left .player-container .die-flex #dice-1, .players-left .player-container .die-flex #dice-2, .players-left .player-container .die-flex #dice-3, .players-left .player-container .die-flex #dice-4, .players-left .player-container .die-flex #dice-5, .players-left .player-container .die-flex #dice-6, .players-right .player-container .die-flex #dice-1, .players-right .player-container .die-flex #dice-2, .players-right .player-container .die-flex #dice-3, .players-right .player-container .die-flex #dice-4, .players-right .player-container .die-flex #dice-5, .players-right .player-container .die-flex #dice-6 {
+    padding: 1.3rem 1.3rem !important;
+  }
+  .players-left .player-container .die-flex #dice-1 .dot, .players-left .player-container .die-flex #dice-1 .rombus, .players-left .player-container .die-flex #dice-2 .dot, .players-left .player-container .die-flex #dice-2 .rombus, .players-left .player-container .die-flex #dice-3 .dot, .players-left .player-container .die-flex #dice-3 .rombus, .players-left .player-container .die-flex #dice-4 .dot, .players-left .player-container .die-flex #dice-4 .rombus, .players-left .player-container .die-flex #dice-5 .dot, .players-left .player-container .die-flex #dice-5 .rombus, .players-left .player-container .die-flex #dice-6 .dot, .players-left .player-container .die-flex #dice-6 .rombus, .players-right .player-container .die-flex #dice-1 .dot, .players-right .player-container .die-flex #dice-1 .rombus, .players-right .player-container .die-flex #dice-2 .dot, .players-right .player-container .die-flex #dice-2 .rombus, .players-right .player-container .die-flex #dice-3 .dot, .players-right .player-container .die-flex #dice-3 .rombus, .players-right .player-container .die-flex #dice-4 .dot, .players-right .player-container .die-flex #dice-4 .rombus, .players-right .player-container .die-flex #dice-5 .dot, .players-right .player-container .die-flex #dice-5 .rombus, .players-right .player-container .die-flex #dice-6 .dot, .players-right .player-container .die-flex #dice-6 .rombus {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  footer {
+    padding: 0 0.7rem !important;
+    align-items: center !important;
+  }
+  footer p {
+    text-align: center !important;
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 550px) {
+  .players-left .player-container, .players-right .player-container {
+    width: 100% !important;
+  }
+  .players-left .player-container .die-flex #dice-1, .players-left .player-container .die-flex #dice-2, .players-left .player-container .die-flex #dice-3, .players-left .player-container .die-flex #dice-4, .players-left .player-container .die-flex #dice-5, .players-left .player-container .die-flex #dice-6, .players-right .player-container .die-flex #dice-1, .players-right .player-container .die-flex #dice-2, .players-right .player-container .die-flex #dice-3, .players-right .player-container .die-flex #dice-4, .players-right .player-container .die-flex #dice-5, .players-right .player-container .die-flex #dice-6 {
+    padding: 1.3rem 1.3rem !important;
+  }
+  .players-left .player-container .die-flex #dice-1 .dot, .players-left .player-container .die-flex #dice-1 .rombus, .players-left .player-container .die-flex #dice-2 .dot, .players-left .player-container .die-flex #dice-2 .rombus, .players-left .player-container .die-flex #dice-3 .dot, .players-left .player-container .die-flex #dice-3 .rombus, .players-left .player-container .die-flex #dice-4 .dot, .players-left .player-container .die-flex #dice-4 .rombus, .players-left .player-container .die-flex #dice-5 .dot, .players-left .player-container .die-flex #dice-5 .rombus, .players-left .player-container .die-flex #dice-6 .dot, .players-left .player-container .die-flex #dice-6 .rombus, .players-right .player-container .die-flex #dice-1 .dot, .players-right .player-container .die-flex #dice-1 .rombus, .players-right .player-container .die-flex #dice-2 .dot, .players-right .player-container .die-flex #dice-2 .rombus, .players-right .player-container .die-flex #dice-3 .dot, .players-right .player-container .die-flex #dice-3 .rombus, .players-right .player-container .die-flex #dice-4 .dot, .players-right .player-container .die-flex #dice-4 .rombus, .players-right .player-container .die-flex #dice-5 .dot, .players-right .player-container .die-flex #dice-5 .rombus, .players-right .player-container .die-flex #dice-6 .dot, .players-right .player-container .die-flex #dice-6 .rombus {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  .players {
+    height: 70% !important;
+  }
+  .players .players-left .player-container, .players .players-right .player-container {
+    height: 100% !important;
+  }
+  .players .players-left .player-container .die-flex #dice-1, .players .players-left .player-container .die-flex #dice-2, .players .players-left .player-container .die-flex #dice-3, .players .players-left .player-container .die-flex #dice-4, .players .players-left .player-container .die-flex #dice-5, .players .players-left .player-container .die-flex #dice-6, .players .players-right .player-container .die-flex #dice-1, .players .players-right .player-container .die-flex #dice-2, .players .players-right .player-container .die-flex #dice-3, .players .players-right .player-container .die-flex #dice-4, .players .players-right .player-container .die-flex #dice-5, .players .players-right .player-container .die-flex #dice-6 {
+    padding: 1rem 1rem !important;
+  }
+  .players .players-left .player-container .die-flex #dice-1 .dot, .players .players-left .player-container .die-flex #dice-1 .rombus, .players .players-left .player-container .die-flex #dice-2 .dot, .players .players-left .player-container .die-flex #dice-2 .rombus, .players .players-left .player-container .die-flex #dice-3 .dot, .players .players-left .player-container .die-flex #dice-3 .rombus, .players .players-left .player-container .die-flex #dice-4 .dot, .players .players-left .player-container .die-flex #dice-4 .rombus, .players .players-left .player-container .die-flex #dice-5 .dot, .players .players-left .player-container .die-flex #dice-5 .rombus, .players .players-left .player-container .die-flex #dice-6 .dot, .players .players-left .player-container .die-flex #dice-6 .rombus, .players .players-right .player-container .die-flex #dice-1 .dot, .players .players-right .player-container .die-flex #dice-1 .rombus, .players .players-right .player-container .die-flex #dice-2 .dot, .players .players-right .player-container .die-flex #dice-2 .rombus, .players .players-right .player-container .die-flex #dice-3 .dot, .players .players-right .player-container .die-flex #dice-3 .rombus, .players .players-right .player-container .die-flex #dice-4 .dot, .players .players-right .player-container .die-flex #dice-4 .rombus, .players .players-right .player-container .die-flex #dice-5 .dot, .players .players-right .player-container .die-flex #dice-5 .rombus, .players .players-right .player-container .die-flex #dice-6 .dot, .players .players-right .player-container .die-flex #dice-6 .rombus {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  footer p {
+    font-size: 11px !important;
+  }
 }
 
 /*# sourceMappingURL=dice.css.map */

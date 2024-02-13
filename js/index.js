@@ -27,6 +27,7 @@ document.getElementById("btn-pips-2").addEventListener("click", function() {
   let pips = document.querySelectorAll("#player-2 #pip");
 
   let pip = 0;
+
   if (pips[pip].classList == "dot") {
 
     while (pip < pips.length) {

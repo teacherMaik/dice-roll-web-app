@@ -1,0 +1,224 @@
+@media(max-width: 1200px) {
+
+  .die-flex {
+
+    .dot, .rombus {
+      width: 36px !important;
+      height: 36px !important;
+    }
+  }
+
+}
+
+@media(max-width: 1100px) {
+  .die-flex {
+
+    .dot, .rombus {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+}
+
+@media(max-width: 920px) {
+
+  h1 {
+    font-size: 5rem !important;
+  }
+
+  .players {
+    height: 70% !important;
+  }
+  .players-left {
+    flex-direction: column-reverse !important;
+  }
+
+  .players-right {
+    flex-direction: column !important;
+  }
+
+  .players-left, .players-right {
+    
+    .celebrate {
+      width: 88% !important;
+      height: 42% !important;
+      align-self: center !important;
+
+      h2 {
+        font-size: 5rem !important;
+      }
+    }
+
+    .player-container {
+      width: 88% !important;
+      height: 79% !important;
+      align-self: center !important;
+
+      #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
+        padding: 1.7rem 1.7rem !important;
+
+        .dot, .rombus {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
+    
+      .die-flex, .die-grid {
+        width: 88% !important;
+      }
+    }
+  }
+}
+
+@media(max-width: 735px) {
+
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  .celebrate {
+
+    h2 {
+      font-size: 2rem !important;
+    }
+  }
+
+  .players-left, .players-right {
+
+    .player-container {
+
+      .die-flex {
+
+        #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
+            padding: 1.7rem 1.7rem !important;
+    
+            .dot, .rombus {
+              width: 40px !important;
+              height: 40px !important;
+            }
+          }
+      }
+    }
+  }
+
+  footer {
+    padding: 0 1rem !important;
+
+    .dice-info, .icons-info, .font-info {
+      padding: 0.3rem !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media(max-width: 678px) {
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  #rollBtn {
+    width: 70% !important;
+  }
+
+  .players {
+    height: 70% !important;
+  }
+
+  .players-left, .players-right {
+
+    .celebrate {
+
+      h2 {
+        font-size: 3rem !important;
+      }
+    }
+
+    .player-container {
+      width: 100% !important;
+
+      .die-flex {
+
+        #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
+            padding: 1.3rem 1.3rem !important;
+    
+            .dot, .rombus {
+              width: 50px !important;
+              height: 50px !important;
+            }
+          }
+      }
+    }
+  }
+
+  footer {
+    padding: 0 0.7rem !important;
+    align-items: center !important;
+
+    p {
+      text-align: center !important;
+      font-size: 13px !important;
+    }
+  }
+}
+
+@media(max-width: 550px) {
+
+  .players-left, .players-right {
+
+    .player-container {
+      width: 100% !important;
+
+      .die-flex {
+
+        #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
+            padding: 1.3rem 1.3rem !important;
+    
+            .dot, .rombus {
+              width: 36px !important;
+              height: 36px !important;
+            }
+          }
+      }
+    }
+  }
+}
+
+@media(max-width: 400px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .players {
+    height: 70% !important;
+
+    .players-left, .players-right {
+
+      .player-container {
+        height: 100% !important;
+
+        .die-flex {
+  
+          #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
+              padding: 1rem 1rem !important;
+      
+              .dot, .rombus {
+                width: 28px !important;
+                height: 28px !important;
+              }
+            }
+        }
+      }
+    }
+  }
+
+  footer {
+    
+    p {
+      font-size: 11px !important;
+    }
+  }
+}
