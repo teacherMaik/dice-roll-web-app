@@ -195,9 +195,10 @@
   }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 435px) {
   h1 {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
+    margin-top: 20%;
   }
 
   .players {
@@ -205,17 +206,34 @@
 
     .players-left, .players-right {
 
+      .celebrate {
+
+        h2 {
+          font-size: 2rem !important;
+        }
+      }
+
       .player-container {
         height: 100% !important;
+
+        h3 {
+          font-size: 0.5rem !important;
+        }
+
+        .btn {
+          font-size: 0.7rem !important;
+          padding: 0.3rem !important;
+          width: 90% !important;
+        }
 
         .die-flex {
   
           #dice-1, #dice-2, #dice-3, #dice-4, #dice-5, #dice-6 {
-              padding: 1rem 1rem !important;
+              padding: 0.7rem 0.7rem !important;
       
               .dot, .rombus {
-                width: 28px !important;
-                height: 28px !important;
+                width: 18px !important;
+                height: 18px !important;
               }
             }
         }

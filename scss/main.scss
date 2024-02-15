@@ -9,7 +9,6 @@
 
 //General Styling
 body {
-  height: 100vh;
   background-color: $dark-blue;
 
   h1, h2 {
@@ -31,8 +30,8 @@ body {
 
 // Everything, even Footer is in Full-container
 .full-container {
-  position: relative; 
-  height: 100%;
+  position: relative;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -258,30 +257,30 @@ body {
       }
     }
   }
+}
 
-  footer {
-    display: flex;
-    padding: 0 2rem;
-    background-color: $light-blue;
+footer {
+  position: relative;
+  display: flex;
+  padding: 0 2rem;
+  background-color: $light-blue;
 
-    .dice-info, .icons-info, .font-info {
-      padding: 1rem;
-    }
-    
-    p {
-      color: $dark-blue;
-      font-size: 21px;
-    }
+  .dice-info, .icons-info, .font-info {
+    padding: 1rem;
+  }
+  
+  p {
+    color: $dark-blue;
+    font-size: 21px;
+  }
 
-    span {
-      font-family: 'Lobster', cursive;
-      color: $light-purple;
-    }
+  span {
+    font-family: 'Lobster', cursive;
+    color: $light-purple;
+  }
 
-    a {
-      color: #fff;
-    }
-
+  a {
+    color: #fff;
   }
 }
 

@@ -23,7 +23,6 @@
 }
 
 body {
-  height: 100vh;
   background-color: #342643;
 }
 body h1, body h2 {
@@ -42,7 +41,7 @@ body p, body h3, body .btn {
 
 .full-container {
   position: relative;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -218,23 +217,25 @@ body p, body h3, body .btn {
   background-color: #ba86ed;
   transform: rotate(45deg);
 }
-.full-container footer {
+
+footer {
+  position: relative;
   display: flex;
   padding: 0 2rem;
   background-color: #78cdec;
 }
-.full-container footer .dice-info, .full-container footer .icons-info, .full-container footer .font-info {
+footer .dice-info, footer .icons-info, footer .font-info {
   padding: 1rem;
 }
-.full-container footer p {
+footer p {
   color: #342643;
   font-size: 21px;
 }
-.full-container footer span {
+footer span {
   font-family: "Lobster", cursive;
   color: #ba86ed;
 }
-.full-container footer a {
+footer a {
   color: #fff;
 }
 
@@ -355,22 +356,34 @@ body p, body h3, body .btn {
     height: 36px !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 435px) {
   h1 {
-    font-size: 2rem !important;
+    font-size: 1.7rem !important;
+    margin-top: 20%;
   }
   .players {
     height: 70% !important;
   }
+  .players .players-left .celebrate h2, .players .players-right .celebrate h2 {
+    font-size: 2rem !important;
+  }
   .players .players-left .player-container, .players .players-right .player-container {
     height: 100% !important;
   }
+  .players .players-left .player-container h3, .players .players-right .player-container h3 {
+    font-size: 0.5rem !important;
+  }
+  .players .players-left .player-container .btn, .players .players-right .player-container .btn {
+    font-size: 0.7rem !important;
+    padding: 0.3rem !important;
+    width: 90% !important;
+  }
   .players .players-left .player-container .die-flex #dice-1, .players .players-left .player-container .die-flex #dice-2, .players .players-left .player-container .die-flex #dice-3, .players .players-left .player-container .die-flex #dice-4, .players .players-left .player-container .die-flex #dice-5, .players .players-left .player-container .die-flex #dice-6, .players .players-right .player-container .die-flex #dice-1, .players .players-right .player-container .die-flex #dice-2, .players .players-right .player-container .die-flex #dice-3, .players .players-right .player-container .die-flex #dice-4, .players .players-right .player-container .die-flex #dice-5, .players .players-right .player-container .die-flex #dice-6 {
-    padding: 1rem 1rem !important;
+    padding: 0.7rem 0.7rem !important;
   }
   .players .players-left .player-container .die-flex #dice-1 .dot, .players .players-left .player-container .die-flex #dice-1 .rombus, .players .players-left .player-container .die-flex #dice-2 .dot, .players .players-left .player-container .die-flex #dice-2 .rombus, .players .players-left .player-container .die-flex #dice-3 .dot, .players .players-left .player-container .die-flex #dice-3 .rombus, .players .players-left .player-container .die-flex #dice-4 .dot, .players .players-left .player-container .die-flex #dice-4 .rombus, .players .players-left .player-container .die-flex #dice-5 .dot, .players .players-left .player-container .die-flex #dice-5 .rombus, .players .players-left .player-container .die-flex #dice-6 .dot, .players .players-left .player-container .die-flex #dice-6 .rombus, .players .players-right .player-container .die-flex #dice-1 .dot, .players .players-right .player-container .die-flex #dice-1 .rombus, .players .players-right .player-container .die-flex #dice-2 .dot, .players .players-right .player-container .die-flex #dice-2 .rombus, .players .players-right .player-container .die-flex #dice-3 .dot, .players .players-right .player-container .die-flex #dice-3 .rombus, .players .players-right .player-container .die-flex #dice-4 .dot, .players .players-right .player-container .die-flex #dice-4 .rombus, .players .players-right .player-container .die-flex #dice-5 .dot, .players .players-right .player-container .die-flex #dice-5 .rombus, .players .players-right .player-container .die-flex #dice-6 .dot, .players .players-right .player-container .die-flex #dice-6 .rombus {
-    width: 28px !important;
-    height: 28px !important;
+    width: 18px !important;
+    height: 18px !important;
   }
   footer p {
     font-size: 11px !important;
