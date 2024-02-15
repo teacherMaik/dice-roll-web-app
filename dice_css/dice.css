@@ -286,6 +286,7 @@ footer a {
   }
   .players .players-left .player-container .die-flex, .players .players-left .player-container .die-grid, .players .players-right .player-container .die-flex, .players .players-right .player-container .die-grid {
     width: 88% !important;
+    aspect-ratio: 1/1 !important;
   }
 }
 @media (max-width: 735px) {
