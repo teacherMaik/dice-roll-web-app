@@ -249,3 +249,16 @@
     }
   }
 }
+
+@media(max-width: 375px) {
+  .players {
+
+    .players-left, .players-right {
+
+      .die-grid {
+        width: 80% !important;
+        aspect-ratio: 1/1 !important;
+      }
+    }
+  }
+}

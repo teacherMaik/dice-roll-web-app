@@ -390,5 +390,11 @@ footer a {
     font-size: 11px !important;
   }
 }
+@media (max-width: 375px) {
+  .players .players-left .die-grid, .players .players-right .die-grid {
+    width: 80% !important;
+    aspect-ratio: 1/1 !important;
+  }
+}
 
 /*# sourceMappingURL=dice.css.map */
